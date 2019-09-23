@@ -12,12 +12,13 @@ class Node {
     T data;
     Node<T> *left;
     Node<T> *right;
+    Node(T data): data(data), left(nullptr), right(nullptr){};
 
     template<class>
     friend class BSTree; 
 
     template<class>
-    friend class Iterator; 
+    friend class Iterator;
 };
 
 #endif
