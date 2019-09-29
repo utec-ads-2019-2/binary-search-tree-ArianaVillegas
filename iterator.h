@@ -37,6 +37,7 @@ class Iterator {
         Iterator(Node<T> *node): current(node) {}
 
         Iterator<T>& operator=(const Iterator<T> &other) {
+            // Qué se iguala?
             return (*this);
         }
 
@@ -91,6 +92,7 @@ class Iterator {
         }
 
         T operator*() {
+            // Caso null?
             return current->data;
         }
 };

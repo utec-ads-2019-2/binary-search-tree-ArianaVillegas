@@ -80,6 +80,7 @@ class BSTree {
         }
 
         bool remove(T data) {
+            // return?
             remove(data,root);
         }
 
